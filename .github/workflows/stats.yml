@@ -1,0 +1,21 @@
+name: Update Stats
+on:
+  schedule:
+    - cron: '0 * * * *' # Runs every hour
+  workflow_dispatch: # Allows you to run it manually
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Generate Stats
+        run: |
+          curl -s "https://github-readme-stats.vercel.app/api?username=sele01&show_icons=true&theme=radical" > stats.svg
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=sele01&layout=compact&theme=radical" > langs.svg
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add stats.svg langs.svg
+          git commit -m "Update stats" || exit 0
+          git push
