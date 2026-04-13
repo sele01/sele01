@@ -36,9 +36,8 @@ I am a University Student dedicated to building robust backend systems and maste
 ---
 
 ### 📊 GitHub Stats
-![Solomon's GitHub stats](https://github-readme-stats.vercel.app/api?username=sele01&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sele01&layout=compact&theme=radical)
-
+![Stats](./stats.svg)
+![Langs](./langs.svg)
 ---
 
 ### 📫 Connect with me:
