@@ -36,8 +36,9 @@ I am a University Student dedicated to building robust backend systems and maste
 ---
 
 ### 📊 GitHub Stats
-![Stats](./stats.svg)
-![Langs](./langs.svg)
+
+![Stats](./github-stats.svg)
+
 ---
 
 ### 📫 Connect with me:
